@@ -7,13 +7,13 @@ function countLetters (string) {
 
       if(!count[letter]){
         count[letter] = {};
-
-        count[letter].position = i;
+        count[letter].position = [];
+        count[letter].position.push(i);
         count[letter].sum= 1;
       }
       else {
         count[letter].sum++;
-        count[letter].position = i;
+        count[letter].position.push(i);
       }
     }
     i++;

@@ -47,7 +47,9 @@ var library = {
   },
 
   addTrackToPlaylist: function (trackId, playlistId) {
-    this.playlists[playlistId].tracks.push(trackId);
+    if(library.playlists[playlistId] && library.tracks[trackId]){
+      this.playlists[playlistId].tracks.push(trackId);
+    }
   },
 
   uid: function() {

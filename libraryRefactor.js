@@ -23,14 +23,14 @@ var library = {
                     }
              },
 
-  printPlaylists: function (libarary) {
+  printPlaylists: function () {
     var playLists = this.playlists;
     for(let playlist in playLists){
       console.log(playLists[playlist].id + ": " + playLists[playlist].name + " - " + playLists[playlist].tracks.length + " tracks");
     }
   },
 
-  printTracks: function (library) {
+  printTracks: function () {
     var tracks = this.tracks;
     for(let track in tracks){
       console.log(tracks[track].id + ": " + tracks[track].name + " by " + tracks[track].artist + " (" +  tracks[track].album + ")");
@@ -72,7 +72,8 @@ var library = {
 
 
 
-}
+};
+
 
 // FUNCTIONS TO IMPLEMENT:
 
